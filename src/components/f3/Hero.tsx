@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, ChevronDown, Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import heroImg from "@/assets/hero-fighter.jpg";
 
 export const Hero = () => {
@@ -122,20 +122,6 @@ export const Hero = () => {
             </div>
           ))}
         </motion.div>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 3.5 }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="font-display text-[10px] tracking-[0.4em] text-muted-foreground">SCROLL</span>
-        <span className="relative flex h-10 w-6 justify-center rounded-full border border-primary/50 overflow-hidden">
-          <span className="absolute top-2 h-2 w-1 rounded-full bg-primary animate-scroll-down" />
-        </span>
-        <ChevronDown className="h-4 w-4 text-primary" />
       </motion.div>
 
       {/* Side rotated label */}
