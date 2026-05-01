@@ -7,9 +7,7 @@ import { Hero } from "@/components/f3/Hero";
 import { About } from "@/components/f3/About";
 import { Programs } from "@/components/f3/Programs";
 import { Trainers } from "@/components/f3/Trainers";
-import { Schedule } from "@/components/f3/Schedule";
 import { Transformation } from "@/components/f3/Transformation";
-import { Membership } from "@/components/f3/Membership";
 import { Testimonials } from "@/components/f3/Testimonials";
 import { Gallery } from "@/components/f3/Gallery";
 import { Contact } from "@/components/f3/Contact";
@@ -29,9 +27,7 @@ const Index = () => {
           <About />
           <Programs />
           <Trainers />
-          <Schedule />
           <Transformation />
-          <Membership />
           <Testimonials />
           <Gallery />
           <Contact />
