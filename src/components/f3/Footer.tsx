@@ -1,4 +1,4 @@
-import { Flame, Instagram, Facebook, Youtube, Twitter, Send } from "lucide-react";
+import { Instagram, Facebook, Youtube, Twitter, Send } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -11,11 +11,8 @@ export const Footer = () => {
       <div className="container py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <a href="#home" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-sm bg-fire shadow-glow">
-                <Flame className="h-5 w-5 text-white" />
-              </span>
-              <span className="font-display text-xl tracking-widest">F3<span className="text-primary">.</span>CLUB</span>
+            <a href="#home" className="block font-display text-base tracking-widest leading-tight">
+              F3 KICKBOXING <span className="text-primary">&</span> MIX MARTIAL ARTS FITNESS CLUB
             </a>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               The world-class kickboxing & MMA academy. Forging fighters since 2014.
