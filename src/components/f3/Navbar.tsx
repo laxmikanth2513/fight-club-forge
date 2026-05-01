@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Flame } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -35,12 +35,9 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#home" className="group flex items-center gap-2">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-sm bg-fire shadow-glow">
-            <Flame className="h-5 w-5 text-white" strokeWidth={2.5} />
-          </span>
-          <span className="font-display text-xl tracking-widest">
-            F3<span className="text-primary">.</span>CLUB
+        <a href="#home" className="group flex items-center">
+          <span className="font-display text-sm sm:text-base lg:text-lg leading-tight tracking-widest max-w-[14rem] sm:max-w-none">
+            F3 KICKBOXING <span className="text-primary">&</span> MIX MARTIAL ARTS FITNESS CLUB
           </span>
         </a>
 
