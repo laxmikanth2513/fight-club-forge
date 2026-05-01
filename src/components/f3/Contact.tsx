@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin, Mail, Send, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { SectionTitle } from "./SectionTitle";
 import { toast } from "@/hooks/use-toast";
@@ -111,20 +111,10 @@ export const Contact = () => {
         </div>
       </div>
 
-      {/* Floating buttons */}
-      <a
-        href="https://wa.me/15550103444"
-        target="_blank"
-        rel="noopener"
-        className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-transform animate-pulse-glow"
-        aria-label="WhatsApp"
-        style={{ animation: "pulse-glow 2.4s ease-in-out infinite" }}
-      >
-        <MessageCircle className="h-6 w-6" />
-      </a>
+      {/* Floating call button */}
       <a
         href="tel:+15550103444"
-        className="fixed bottom-6 left-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-fire text-primary-foreground shadow-glow hover:scale-110 transition-transform animate-pulse-glow"
+        className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-fire text-primary-foreground shadow-glow hover:scale-110 transition-transform animate-pulse-glow"
         aria-label="Call"
       >
         <Phone className="h-5 w-5" />
